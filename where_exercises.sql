@@ -7,8 +7,8 @@ USE employees;
 SELECT emp_no, first_name, last_name, gender
 FROM employees
 WHERE first_name = 'Irena'
-   OR 'Vidya'
-   OR 'Maya'
+   OR first_name = 'Vidya'
+   OR first_name = 'Maya'
     AND gender = 'M';
 
 

@@ -16,6 +16,8 @@ FROM employees
 WHERE MONTH(birth_date) = 12
   AND DAY(birth_date) = 25;
 
+
+
 SELECT *, datediff(now(), hire_date)
 FROM employees
 WHERE MONTH(birth_date) = 12
