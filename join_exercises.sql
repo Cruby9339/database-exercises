@@ -42,7 +42,7 @@ SELECT d.dept_name                            AS 'Department Name',
        s.salary                               AS 'Salary'
 FROM employees AS e
          JOIN dept_manager AS dm
-              on e.emp_no = dm.emp_no
+              ON e.emp_no = dm.emp_no
          JOIN salaries AS s
               ON dm.emp_no = s.emp_no
          JOIN departments AS d
