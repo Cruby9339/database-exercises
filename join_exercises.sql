@@ -1,25 +1,25 @@
 USE employees;
 
-SELECT d.dept_name                            as department,
+SELECT d.dept_name                            AS department,
        concat(e.first_name, ' ', e.last_name) AS manager
 FROM employees AS e
          JOIN dept_manager AS dm
               ON e.emp_no = dm.emp_no
-         JOIN departments as d
+         JOIN departments AS d
               ON dm.dept_no = d.dept_no
 WHERE dm.to_date > now();
 
 
 
-SELECT d.dept_name                            as department,
+SELECT d.dept_name                            AS department,
        concat(e.first_name, ' ', e.last_name) AS manager
 FROM employees AS e
          JOIN dept_manager AS dm
               ON e.emp_no = dm.emp_no
-         JOIN departments as d
+         JOIN departments AS d
               ON dm.dept_no = d.dept_no
 WHERE e.gender = 'F'
-  and dm.to_date > now();
+  AND dm.to_date > now();
 
 
 
